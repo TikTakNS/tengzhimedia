@@ -2,8 +2,9 @@
   --primary-color: #fff;
   --button-color: #30189e;
   --orange-color: #e44d26;
-  --lightOrange-color: #ff6943;
+  --lightOrange-color: #f64c22;
   --dark-blue: #212738;
+  /* --lightOrange-color: #ff6943; */
 }
 
 /* Global Reset */
@@ -147,6 +148,7 @@ header {
 }
 .container-form .title {
   color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 .hidden {
   visibility: hidden;
@@ -197,4 +199,53 @@ header {
 }
 .footer p {
   font-size: 0.8em;
+}
+
+/* TABLET VIEW */
+@media (min-width: 760px) {
+  /* Header Tablet */
+  .container-header {
+    flex-direction: row;
+    gap: 10em;
+  }
+  .container-header .logo {
+    flex: 1;
+  }
+  .container-header .header-menu {
+    flex: 2;
+    justify-content: flex-end;
+  }
+
+  /* Main Tablet */
+  .main-container {
+    grid-template-columns: 2fr 1fr;
+    gap: 3em;
+  }
+  .main-container .main-icon {
+    display: block;
+  }
+  .main-icon img {
+    width: 100%;
+  }
+
+  /* Services Tablet */
+  .container-services {
+    padding-bottom: 2.5em;
+  }
+  .container-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-cards .card:nth-child(7) {
+    display: none;
+  }
+
+  /* Form Tablet */
+  .container-form {
+    padding-bottom: 2.5em;
+  }
+  .wrapper-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+  }
 }
