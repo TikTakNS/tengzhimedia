@@ -249,3 +249,71 @@ header {
     gap: 2em;
   }
 }
+
+/* Laptop View */
+@media (min-width: 1024px) {
+  /* Logo & Navigation Laptop*/
+  .container-header {
+    gap: 20em;
+  }
+  .container-header .logo {
+    display: flex;
+    justify-self: flex-start;
+    flex: 1;
+  }
+  .header-menu {
+    flex: 1;
+  }
+
+  /* Main  Laptop*/
+  .main-container h1 {
+    font-size: 4em;
+    margin-top: 1.8em;
+  }
+  .main-container p {
+    font-size: 2em;
+  }
+  .main-container .btn {
+    font-size: 1.6em;
+    width: 180px;
+    height: 50px;
+  }
+  .main-icon img {
+    width: 95%;
+  }
+
+  /* Services Laptop */
+  .container-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container-cards .card:nth-child(7) {
+    display: block;
+  }
+
+  /* Form Laptop */
+  .container-form .title {
+    margin-bottom: 0;
+  }
+  .wrapper-form {
+    gap: 3em;
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .form {
+    height: 450px;
+    align-self: center;
+  }
+  .form-control {
+    margin: 3.5em 0;
+  }
+  .form-control input[type="text"],
+  .form-control input[type="email"] {
+    font-size: 1.3em;
+  }
+  .icon-holder {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icon-holder img {
+    width: 90%;
+  }
+}
