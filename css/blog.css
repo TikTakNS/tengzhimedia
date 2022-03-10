@@ -1,0 +1,36 @@
+.header {
+  margin-bottom: 1.5em;
+}
+.blogger-page {
+  background-color: #fff;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.blogger-page .container {
+  padding-top: 0;
+}
+.blog {
+  margin-bottom: 10em;
+}
+.blogger-page .blog:nth-child(2) {
+  background-color: aqua;
+}
+.blog h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+.blog h4 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 1.2em;
+}
+.blog h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.4em;
+}
+.blog p {
+  font-size: 1.4em;
+  letter-spacing: normal;
+  line-height: 1.6em;
+  margin-bottom: 1.2em;
+}

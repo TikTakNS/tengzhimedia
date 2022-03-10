@@ -317,3 +317,19 @@ header {
     width: 90%;
   }
 }
+
+/* Big Screen View */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    padding-top: 1em;
+    padding-right: 15em;
+    padding-left: 15em;
+  }
+  .container-header {
+    gap: 30em;
+  }
+  .title h1 {
+    font-size: 3em;
+  }
+}
